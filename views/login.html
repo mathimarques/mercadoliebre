@@ -19,10 +19,11 @@
     <header>
       <div class="top-header">
         <div class="logo">
-          <img
-            src="images/logo-mercado-liebre.svg"
-            alt="Logo de MercadoLiebre"
-          />
+          <a href="/"
+            ><img
+              src="images/logo-mercado-liebre.svg"
+              alt="Logo de MercadoLiebre"
+          /></a>
         </div>
         <div class="form" action="#" method="GET">
           <input
@@ -68,10 +69,17 @@
       <section>
         <form class="form" method="POST" action="/home.html">
           <p>
-            <input type="name" name="nombre" placeholder="Nombre de usuario"  required/>
+            <input
+              class="input"
+              type="name"
+              name="nombre"
+              placeholder="Nombre de usuario"
+              required
+            />
           </p>
           <p>
             <input
+              class="input"
               type="password"
               minlength="2"
               name="password"
