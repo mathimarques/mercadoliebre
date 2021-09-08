@@ -36,6 +36,11 @@ button[type="submit"] {
   margin-top: 20px;
 }
 
+button[type="reset"]:hover {
+  background-color: #0022aa;
+  color: white;
+}
+
 button[type="reset"] {
   background-color: #fff;
   border: 0;
@@ -47,6 +52,10 @@ button[type="reset"] {
   width: 100%;
   border-radius: 4px;
   margin-top: 20px;
+}
+
+input[type="date"] {
+  color:rgb(109, 109, 109);
 }
 
 /*HEADER*/
@@ -145,7 +154,7 @@ h3,
 }
 
 .input:focus {
-  border: none !important;
+  outline: none;
 }
 
 .flex {
@@ -174,7 +183,6 @@ h3,
 }
 
 /*MAIN*/
-
 main {
   width: 90%;
   margin: 0 auto;
@@ -252,7 +260,6 @@ article div.main-article {
 }
 
 /*FOOTER*/
-
 footer {
   text-align: center;
   background-color: #fff;
