@@ -304,4 +304,29 @@ footer section i {
     width: 100%;
     display: flex;
   }
+
+  footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer section {
+    padding: 0px 40px 0 40px;
+    width: 30%;
+    align-content: center;
+    text-align: center;
+  }
+
+  footer section .copyright {
+    align-content: flex-start !important;
+  }
+
+  footer section i:hover {
+    color: #39b54a;
+    font-size: 40px;
+    margin: 20px 0px 10px 0px;
+    width: 50px;
+  }
 }
