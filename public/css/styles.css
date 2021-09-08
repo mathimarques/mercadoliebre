@@ -34,17 +34,7 @@ form {
   padding: 40px 0 80px 0;
 }
 
-.search {
-  background-color: white;
-  width: 100%;
-  padding: 8px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 0px;
-  border-radius: 4px;
-}
-
-button[type="submit"]{
+button[type="submit"] {
   background-color: #4caf50;
   border: 0;
   color: white;
@@ -57,7 +47,7 @@ button[type="submit"]{
   margin-top: 20px;
 }
 
-button[type="reset"]{
+button[type="reset"] {
   background-color: #fff;
   border: 0;
   color: black;
@@ -203,10 +193,6 @@ main input {
   border-radius: 4px;
 }
 
-.input:focus {
-  border: 3px solid #555;
-}
-
 main h4 {
   width: 100%;
   margin: 20px 0 5px 0;
@@ -234,6 +220,19 @@ article div.main-article {
 
 .submit:hover {
   background-color: #0022aa;
+}
+
+header div input {
+  border-radius: 0px !important;
+}
+
+.header-submit {
+  background-color: #fff;
+  border: 0;
+  color: black;
+  padding: 12px 32px;
+  cursor: pointer;
+  border-radius: 0px;
 }
 
 .copyright {
