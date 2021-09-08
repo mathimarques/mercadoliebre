@@ -16,17 +16,6 @@ h3 {
 p {
   font-size: 12px;
 }
-div.top-header {
-  padding: 2%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-div.form {
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
 
 form {
   width: 75%;
@@ -60,6 +49,7 @@ button[type="reset"] {
   margin-top: 20px;
 }
 
+/*HEADER*/
 header {
   background-color: #eac926;
   margin: 0px;
@@ -90,6 +80,23 @@ header div.top-header p {
   margin-top: 10px;
 }
 
+header div input {
+  border-radius: 0px !important;
+}
+
+/*DIVS*/
+div.top-header {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
 div.burger-menu {
   text-align: center;
 }
@@ -105,6 +112,7 @@ div.burger-menu i {
   width: 40px;
 }
 
+/*CLASS*/
 .price {
   font-size: 18px;
   width: 30%;
@@ -127,17 +135,53 @@ h3,
   margin-top: 20px;
 }
 
-main section article:hover .description {
-  display: inline-block;
+.input {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0px;
+  border-radius: 4px;
 }
 
-section.banner img {
-  width: 100%;
+.input:focus {
+  border: none !important;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.submit:hover {
+  background-color: #0022aa;
+}
+
+.header-submit {
+  background-color: #fff;
+  border: 0;
+  color: black;
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.copyright {
+  text-align: left;
+  padding-top: 40px !important;
+  margin: 0px !important;
+}
+
+/*MAIN*/
 
 main {
   width: 90%;
   margin: 0 auto;
+}
+
+main section article:hover .description {
+  display: inline-block;
 }
 
 main section article {
@@ -184,15 +228,6 @@ main input {
   margin: 9px 5px 10px 0;
 }
 
-.input {
-  width: 100%;
-  padding: 12px 10px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 0px;
-  border-radius: 4px;
-}
-
 main h4 {
   width: 100%;
   margin: 20px 0 5px 0;
@@ -206,45 +241,17 @@ main form p {
   flex-direction: row;
 }
 
+section.banner img {
+  width: 100%;
+}
+
 article div.main-article {
   width: 100%;
   border-top: 1px solid #ebebeb;
   padding: 15px;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  align-content: center;
-}
-
-.submit:hover {
-  background-color: #0022aa;
-}
-
-header div input {
-  border-radius: 0px !important;
-}
-
-header div input::placeholder {
-  border-radius: 0px !important;
-  border: 0px !important; 
-}
-
-.header-submit {
-  background-color: #fff;
-  border: 0;
-  color: black;
-  padding: 12px 10px;
-  cursor: pointer;
-  border-radius: 0px;
-}
-
-.copyright {
-  text-align: left;
-  padding-top: 40px !important;
-  margin: 0px !important;
-}
+/*FOOTER*/
 
 footer {
   text-align: center;
@@ -277,34 +284,8 @@ footer section i {
     height: 30px;
   }
 
-  div.burger-menu i {
-    display: none;
-  }
-
-  .products {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  div.top-header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-  }
-
   header div.top-header p {
     margin-top: 0px;
-  }
-
-  .header-links {
-    justify-content: space-evenly;
-  }
-
-  .header-rutas {
-    justify-content: space-evenly;
   }
 
   header nav {
@@ -317,18 +298,9 @@ footer section i {
     width: 100%;
     display: flex;
   }
-}
 
-/*MEDIA QUERYS - Desktop*/
-@media (min-width: 769px) {
-  main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    margin: 10px 5px 10px 5px;
-  }
-
-  .products {
-    display: flex;
-    flex-wrap: nowrap;
+  div.burger-menu i {
+    display: none;
   }
 
   div.top-header {
@@ -340,8 +312,9 @@ footer section i {
     align-content: center;
   }
 
-  header div.top-header p {
-    margin-top: 0px;
+  .products {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .header-links {
@@ -351,7 +324,10 @@ footer section i {
   .header-rutas {
     justify-content: space-evenly;
   }
+}
 
+/*MEDIA QUERYS - Desktop*/
+@media (min-width: 769px) {
   header nav {
     width: 100%;
     display: flex;
@@ -360,6 +336,37 @@ footer section i {
   header ul {
     width: 100%;
     display: flex;
+  }
+
+  header div.top-header p {
+    margin-top: 0px;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin: 10px 5px 10px 5px;
+  }
+
+  div.top-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .header-links {
+    justify-content: space-evenly;
+  }
+
+  .header-rutas {
+    justify-content: space-evenly;
   }
 
   footer {
